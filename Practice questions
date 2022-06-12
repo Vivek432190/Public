@@ -1,0 +1,469 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyNeyj1pfqOwhlAtQ5KZHv24",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Vivek432190/Public/blob/main/Practice%20questions\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "AWSx6bVcmrCN"
+      },
+      "outputs": [],
+      "source": [
+        "#Write a Python program which accepts the radius of a circle from the user and compute the area"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r = int(input(\"Please enter radius of a circle\"))\n",
+        "area = 3.14 * (r**2)\n",
+        "print (\"Area of circle is\",area)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "usSsgXZCmvAN",
+        "outputId": "2530c81c-a30e-4c48-e70b-8fe97ce10040"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Please enter radius of a circle2\n",
+            "Area of circle is 12.56\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Write a Python Program to accept the details of a student like name, roll number and mark and display it. "
+      ],
+      "metadata": {
+        "id": "3njoePx-oycw"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = str(input(\"Enter name:\"))\n",
+        "rollno = str(input(\"Enter the roll number:\"))\n",
+        "mark = str(input(\"Enter the mark:\"))\n",
+        "print (\"Name is\",name,\"Roll No is\",rollno,\"Mark is\",mark)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kcjoT1i1m_G-",
+        "outputId": "cce84d6f-4f84-4c81-9f54-43255daddf71"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter name:Hatim\n",
+            "Enter the roll number:2\n",
+            "Enter the mark:21\n",
+            "Name is Hatim Roll No is 2 Mark is 21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Write a Python program to get the largest number from a list. "
+      ],
+      "metadata": {
+        "id": "nMtRPSsgoWqo"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Numbers = []\n",
+        "n = int(input(\"Enter no of elements in the list\"))\n",
+        "for i in range(0,n):\n",
+        "  ele = int(input(\"Enter elements\"))\n",
+        "  Numbers.append(ele)\n",
+        "print(\"Max no is\",max(Numbers))\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a3Uaec1_o9Df",
+        "outputId": "0ffc7b4d-37bb-4ebc-a682-9e8fa3ac4122"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter no of elements in the list5\n",
+            "Enter elements1\n",
+            "Enter elements2\n",
+            "Enter elements3\n",
+            "Enter elements4\n",
+            "Enter elements5\n",
+            "Max no is 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Write a Python program to accept a string value from the user and display the count of each character in that string"
+      ],
+      "metadata": {
+        "id": "XvXozRs5pAWt"
+      },
+      "execution_count": 23,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "word = \"aassffjj\"\n",
+        "freq = {}\n",
+        "for i in word:\n",
+        "  if i in freq:\n",
+        "    freq[i]+= 1\n",
+        "  else:\n",
+        "    freq[i]=1\n",
+        "print(freq)\n",
+        "print(\"Count of characters is:\\n\" + str(freq))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2y1NSMs7ufK1",
+        "outputId": "c3248163-ab28-44d8-e122-284dd38a7e30"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'a': 2, 's': 2, 'f': 2, 'j': 2}\n",
+            "Count of characters is:\n",
+            "{'a': 2, 's': 2, 'f': 2, 'j': 2}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'''Write a Python program to copy element 44 and 55 from the following tuple into a new tuple.\n",
+        "tuple1 = (11, 22, 33, 44, 55, 66)'''"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "jcTG5Q_fuorL",
+        "outputId": "17959ba5-9129-4617-cae4-c68b91d93b41"
+      },
+      "execution_count": 48,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Write a Python program to copy element 44 and 55 from the following tuple into a new tuple.\\ntuple1 = (11, 22, 33, 44, 55, 66)'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 48
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tuple1 = (11, 22, 33, 44, 55, 66)\n",
+        "tuple2 = tuple1[3],tuple1[4]\n",
+        "print(tuple2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MYcdLUHa430z",
+        "outputId": "9e4eb891-6b92-4884-89e3-76a6f3cce204"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(44, 55)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Given a range of first 10 numbers, write a Python program to iterate from start number to the end number and print the sum of the current number and previous number. "
+      ],
+      "metadata": {
+        "id": "KbwoCo3rAkP1"
+      },
+      "execution_count": 52,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = range(11)\n",
+        "print(list(a))\n",
+        "for i in a:\n",
+        "  if i > 0:\n",
+        "    b = a[i]+a[i-1]\n",
+        "    print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SKHPa-MRApC6",
+        "outputId": "461788ed-6d39-4fed-b2d7-7f7e03b670e5"
+      },
+      "execution_count": 86,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n",
+            "11\n",
+            "13\n",
+            "15\n",
+            "17\n",
+            "19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Write a Python program to print only those numbers which are divisible of 5"
+      ],
+      "metadata": {
+        "id": "_7kVyEHqAudI"
+      },
+      "execution_count": 87,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list = [10,35,6,8,15]\n",
+        "for i in range(len(list)):\n",
+        "    if list[i] % 5 == 0:\n",
+        "      print(list[i])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OCG94hh5I6vu",
+        "outputId": "e9a015f3-5ab6-4008-d187-3ca669f78b19"
+      },
+      "execution_count": 94,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "35\n",
+            "15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Write a Python program to check whether a number is prime or not."
+      ],
+      "metadata": {
+        "id": "goT4bsaZJdN5"
+      },
+      "execution_count": 95,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter no\"))\n",
+        "flag = False\n",
+        "if i >1:\n",
+        "  for i in range(2,num):\n",
+        "    if num%i==0:\n",
+        "      flag = True\n",
+        "      break\n",
+        "if flag == True:\n",
+        "  print(\"Not a prime number\")\n",
+        "else:\n",
+        "  print(\"Is a prime number\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LGrN8dqJKzmt",
+        "outputId": "431164fd-e80a-40e9-df1b-0901ec7da992"
+      },
+      "execution_count": 103,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter no3\n",
+            "Is a prime number\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Write a Python program to reverse a list using for loop"
+      ],
+      "metadata": {
+        "id": "Wl4wXAKFM63X"
+      },
+      "execution_count": 104,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1 = [1,2,3,4]\n",
+        "list2 = []\n",
+        "for i in range(len(list1)):\n",
+        "   a = list1[-(i+1)]\n",
+        "   list2.append(a)\n",
+        "print(list2)\n",
+        "  \n",
+        "  "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z8RsLaeyPH4P",
+        "outputId": "a79c107c-1f3e-4190-d9c1-f2fd74db02ef"
+      },
+      "execution_count": 114,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[4, 3, 2, 1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list=[11,22,13,14]\n",
+        "lst=[]\n",
+        "for i in list:\n",
+        "    lst.insert(0,i)\n",
+        "print(lst)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HdsKQIFgPOSO",
+        "outputId": "fdd211cf-6ec7-4d5b-9c76-4abb14769b53"
+      },
+      "execution_count": 115,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[14, 13, 22, 11]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "9qjg6M6OSnMJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
